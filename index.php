@@ -1,14 +1,70 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
 
-include './class/Movie.php';
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- BOOTSTRAP -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous' />
+
+  <!-- AXIOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js" integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- VUE -->
+  <script src="https://unpkg.com/vue@3"></script>
+
+  <title>Movies list</title>
+</head>
+
+<body>
+  <div id="app">
+
+    <!-- Inizio Header -->
+    <header class="bg-dark">
+      <div class="container d-flex align-items-center justify-content-center py-2">
+        <div div class="row text-white">
+          <div class="col">
+            <h1>My favorites albums</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Fine Header -->
+
+    <div class="jt-container">
+      <div class="container py-5 ">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col" v-for="(movie, index) in moviesList" :key="index">
+              <div class="card h-100 movie-card mb-5 text-center text-white p-5">
+                <div class="card-body text-center">
+                  <h3 class="movie my-4">{{movie.name}}</h3>
+                  <p class="director">{{movie.director}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
 
 
 
 
 
 
-
-// Oggi pomeriggio ripassate i primi concetti di classe, variabili e metodi d’istanza che abbiamo visto stamattina e create un file index.php in cui:
+<!-- // Oggi pomeriggio ripassate i primi concetti di classe, variabili e metodi d’istanza che abbiamo visto stamattina e create un file index.php in cui:
 //  - è definita una classe ‘Movie’
 //    => all’interno della classe sono dichiarate delle variabili d’istanza
 //    => all’interno della classe è definito un costruttore
@@ -21,4 +77,4 @@ include './class/Movie.php';
 // Facciamo attenzione all’organizzazione del codice, suddividendolo in appositi file e cartelle. Possiamo ad esempio organizzare il codice
 // - creando un file dedicato ai dati (tipo le array di oggetti) che potremmo chiamare db.php
 // - mettendo ciascuna classe nel proprio file e magari raggruppare tutte le classi in una cartella dedicata che possiamo chiamare Models/
-// - organizzando il layout dividendo la struttura ed i contenuti in file e parziali dedicati.
+// - organizzando il layout dividendo la struttura ed i contenuti in file e parziali dedicati. -->
