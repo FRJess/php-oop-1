@@ -38,7 +38,7 @@ include 'movies.php';
       <div class="container d-flex align-items-center justify-content-center py-2">
         <div div class="row text-white">
           <div class="col">
-            <h1>My favorites albums</h1>
+            <h1>My favorites movies</h1>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@ include 'movies.php';
       <div class="container py-5 ">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <?php foreach ($moviesList as $movie) : ?>
-            <div class="col-5 card m-3 text-center pt-2">
+            <div class="col-5 card h-100 m-3 text-center pt-2">
                 <h3 class="py-3"><?php echo $movie->name ?></h3>
                 <p> <strong>Director: </strong> <?php echo $movie->director ?></p>
                 <p><strong>Genre: </strong> <?php echo $movie->genre ?></p>
