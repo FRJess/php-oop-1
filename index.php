@@ -1,5 +1,8 @@
 <?php
 
+include './class/Movie.php';
+
+
 
 
 

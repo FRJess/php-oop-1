@@ -6,6 +6,7 @@ class Movie{
   public $genres;
   public $year;
   public $country;
+  public $details;
 
   /**
    * @param String $name Movie's title in original language
@@ -22,6 +23,10 @@ class Movie{
     $this->genres = $_genres;
     $this->year = $_year;
     $this->country = $_country;
+  }
+
+  public function set_Details(){
+    $this->details = $this->name . "was made by and was first released in" .$this->year;
   }
 
 
