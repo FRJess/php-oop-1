@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Black Panther",
+    "director": "Ryan Coogler",
+    "genre": "Adventure",
+    "year": "2018",
+    "country": "USA"
+  },
+  {
+    "name": "Portrait de la jeune fille en feu ",
+    "director": "Céline Sciamma",
+    "genre": "Drama",
+    "year": "2019",
+    "country": "France"
+  },
+  {
+    "name": "Kimi no na wa",
+    "director": "Makoto Shinkai",
+    "genre": "Drama",
+    "year": "2016",
+    "country": "Japan"
+  },
+  {
+    "name": "Rear Window",
+    "director": "Alfred Hitchcock",
+    "genre": "Mistery",
+    "year": "1954",
+    "country": "USA"
+  }
+]
