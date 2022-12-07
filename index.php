@@ -1,3 +1,12 @@
+<?php
+
+include './class/Movie.php';
+include 'movies.php';
+
+//var_dump($moviesList);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,14 +48,15 @@
     <div class="jt-container">
       <div class="container py-5 ">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            <div class="col" v-for="(movie, index) in moviesList" :key="index">
-              <div class="card h-100 movie-card mb-5 text-center text-white p-5">
-                <div class="card-body text-center">
-                  <h3 class="movie my-4">{{movie.name}}</h3>
-                  <p class="director">{{movie.director}}</p>
-                </div>
-              </div>
+          <?php foreach ($moviesList as $movie) : ?>
+            <div class="col-5 card m-3 text-center pt-2">
+                <h3 class="py-3"><?php echo $movie->name ?></h3>
+                <p> <strong>Director: </strong> <?php echo $movie->director ?></p>
+                <p><strong>Genre: </strong> <?php echo $movie->genre ?></p>
+                <p><strong>Release year: </strong> <?php echo $movie->year ?></p>
+                <p><strong>Country of origin: </strong> <?php echo $movie->country ?></p>
             </div>
+          <?php endforeach; ?>
           </div>
       </div>
 

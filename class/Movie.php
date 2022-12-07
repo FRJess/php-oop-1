@@ -1,5 +1,7 @@
 <?php
 
+include 'movies.php';
+
 class Movie{
   public $name;
   public $director;
@@ -28,6 +30,5 @@ class Movie{
   public function set_Details(){
     $this->details = $this->name . "was made by and was first released in" .$this->year;
   }
-
 
 }
