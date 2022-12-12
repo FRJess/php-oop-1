@@ -1,6 +1,7 @@
 <?php
 
-include './class/Movie.php';
+include './Models/Movie.php';
+include './Models/Genre.php';
 include 'movies.php';
 
 //var_dump($moviesList);
@@ -52,15 +53,15 @@ include 'movies.php';
             <div class="col-5 card h-100 m-3 text-center pt-2">
                 <h3 class="py-3"><?php echo $movie->name ?></h3>
                 <p> <strong>Director: </strong> <?php echo $movie->director ?></p>
-                <p><strong>Genre: </strong> <?php echo $movie->genre ?></p>
+                <p><strong>Genre: </strong> <?php echo $movie->genres ?></p>
                 <p><strong>Release year: </strong> <?php echo $movie->year ?></p>
                 <p><strong>Country of origin: </strong> <?php echo $movie->country ?></p>
             </div>
           <?php endforeach; ?>
           </div>
       </div>
-
     </div>
+
   </div>
 
   <!-- JS -->
