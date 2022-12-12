@@ -4,27 +4,31 @@
     "director": "Ryan Coogler",
     "genre": "Adventure",
     "year": "2018",
-    "country": "USA"
+    "country": "USA",
+    "poster": "https://www.themoviedb.org/t/p/w1280/nq4us1kF7HiOKoqW2f94aAeVuBz.jpg"
   },
   {
     "name": "Portrait de la jeune fille en feu",
     "director": "Céline Sciamma",
     "genre": "Drama",
     "year": "2019",
-    "country": "France"
+    "country": "France",
+    "poster": "https://www.themoviedb.org/t/p/w1280/uCx5hXBbMOwAaYlbPhl3izZglDq.jpg"
   },
   {
     "name": "Kimi no na wa",
     "director": "Makoto Shinkai",
     "genre": "Drama",
     "year": "2016",
-    "country": "Japan"
+    "country": "Japan",
+    "poster": "https://www.themoviedb.org/t/p/w1280/z26TZXh7lqrRVCIy1HXTTz3Fu2X.jpg"
   },
   {
     "name": "Rear Window",
     "director": "Alfred Hitchcock",
     "genre": "Mistery",
     "year": "1954",
-    "country": "USA"
+    "country": "USA",
+    "poster": "https://www.themoviedb.org/t/p/w1280/kWoq5wk8ufremseE3HbCm5ZMxp7.jpg"
   }
 ]

@@ -9,6 +9,7 @@ class Movie{
   public $year;
   public $country;
   public $details;
+  public $poster;
 
   /**
    * @param String $name Movie's title in original language
@@ -18,13 +19,14 @@ class Movie{
    * @param String $country Country of origin
    */
   
-  public function __construct($_name, $_director, $_genres, $_year, $_country)
+  public function __construct($_name, $_director, $_genres, $_year, $_country, $_poster)
   {
     $this->name = $_name;
     $this->director = $_director;
     $this->genres = $_genres;
     $this->year = $_year;
     $this->country = $_country;
+    $this->poster = $_poster;
   }
 
   public function set_Details(){
