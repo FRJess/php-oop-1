@@ -47,19 +47,25 @@ include 'movies.php';
     <!-- Fine Header -->
 
     <div class="jt-container">
-      <div class="container py-5 ">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="container py-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          
           <?php foreach ($moviesList as $movie) : ?>
-            <div class="col-5 card h-100 m-3 text-center pt-2">
-              <img src="<?php echo $movie->poster?>" class="card-img-top" alt="">
-                <h3 class="py-3"><?php echo $movie->name ?></h3>
-                <p> <strong>Director: </strong> <?php echo $movie->director ?></p>
-                <p><strong>Genre: </strong> <?php echo $movie->genres ?></p>
-                <p><strong>Release year: </strong> <?php echo $movie->year ?></p>
-                <p><strong>Country of origin: </strong> <?php echo $movie->country ?></p>
+            <div class="col">
+              <div class="card h-100 m-3 text-center p-0">
+                <img src="<?php echo $movie->poster?>" class="card-img-top" alt="<?php echo $movie->name ?>">
+                <div class="card-body">
+                  <h3 class="py-3"><?php echo $movie->name ?></h3>
+                  <p> <strong>Director: </strong> <?php echo $movie->director ?></p>
+                  <p><strong>Genre: </strong> <?php echo $movie->genres ?></p>
+                  <p><strong>Release year: </strong> <?php echo $movie->year ?></p>
+                  <p><strong>Country of origin: </strong> <?php echo $movie->country ?></p>
+                </div>
+              </div>
             </div>
-          <?php endforeach; ?>
-          </div>
+            <?php endforeach; ?>
+
+        </div>
       </div>
     </div>
 
